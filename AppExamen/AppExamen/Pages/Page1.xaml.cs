@@ -74,7 +74,7 @@ namespace AppExamen.Pages
             gato.Edad = int.Parse(txtEdad.Text);
             gato.Color = txtColor.Text;
 
-            string result = APIConsumer.CreateGato(Url, gato);
+            string result = APIConsumer.SaveGato(Url, txtId.Text, gato);
             if (result == "OK")
             {
                 txtId.Text = "";

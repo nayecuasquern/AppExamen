@@ -7,6 +7,15 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Label></Label>
+
+            <Grid x:Name="GridGatos">
+            </Grid>
+
+            <Label></Label>
+
+            <Button Text="Regresar" Clicked="Button_Clicked" TextTransform="None"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

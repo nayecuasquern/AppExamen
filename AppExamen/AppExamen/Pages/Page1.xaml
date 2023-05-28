@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamen.Pages.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="App para registro de Datos de Gatos"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Label></Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">ID: </Label>
+                <Entry Placeholder="Id: " x:Name="txtId" FontSize="14" Grid.Column="1" ></Entry>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">NOMBRE:</Label>
+                <Entry Placeholder="Nombre: " x:Name="txtNombre" FontSize="14" Grid.Column="1"></Entry>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">EDAD:</Label>
+                <Entry Placeholder="Edad: " x:Name="txtEdad" FontSize="14" Grid.Column="1" ></Entry>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" HorizontalOptions="Center" VerticalOptions="Center">COLOR:</Label>
+                <Entry Placeholder="Color: " x:Name="txtColor" FontSize="14" Grid.Column="1"></Entry>
+            </Grid>
+
+            <Label></Label>
+
+            <Button Text="Lista de Gatos" Clicked="Button_ListaGatos" TextTransform="None"></Button>
+
+            <Label></Label>
+
+            <Button Text="Leer Datos" Clicked="Button_Leer" TextTransform="None"></Button>
+            <Button Text="Registrar" Clicked="Button_Registrar" TextTransform="None"></Button>
+            <Button Text="Actualizar" Clicked="Button_Actualizar" TextTransform="None"></Button>
+            <Button Text="Eliminar" Clicked="Button_Eliminar" TextTransform="None"></Button>
+            
+           
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
